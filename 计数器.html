@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计数器</title>
+    <style>
+        div{
+            counter-reset: h2 0;
+        }
+        h1{
+            counter-increment: h2 1;
+        }
+        h1::before{
+            content: counter(h2)".";
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>计数器</h1>
+        <h1>计数器</h1>
+        <h1>计数器</h1>
+        <h1>计数器</h1>
+        <h1>计数器</h1>
+        <img src="http://www.w3school.com.cn/i/eg_landscape.jpg" alt="">
+    </div>
+</body>
+</html>
